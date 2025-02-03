@@ -12,7 +12,7 @@ class Config:
     COMMAND_PREFIX = "!"
 
 # Initialize the bot
-class PRSEKBot(commands.Bot):
+class SnipyLBot(commands.Bot):
     def __init__(self):
         super().__init__(
             token=Config.TWITCH_BOT_TOKEN,
@@ -75,7 +75,7 @@ class PRSEKBot(commands.Bot):
     @commands.command(name="help")
     async def help_command(self, ctx):
         help_message = (
-            "🎵 PRSEK Bot Commands:\n"
+            "🎵 SnipyL Bot Commands:\n"
             "!songrequest <song_name> - Request a song.\n"
             "!queue - View the current song queue.\n"
             "!currentsong - See the currently playing song.\n"
@@ -86,6 +86,6 @@ class PRSEKBot(commands.Bot):
 
 # Run the bot
 if __name__ == "__main__":
-    bot = PRSEKBot()
+    bot = SnipyLBot()
     bot.run()
     
