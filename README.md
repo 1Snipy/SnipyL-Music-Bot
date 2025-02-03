@@ -1,40 +1,50 @@
-SnipyL is a custom-built Twitch bot designed to seamlessly interface with the Songify Windows application, enabling real-time song requests and playback control directly from a Twitch chat. This bot enhances viewer engagement by allowing your audience to influence the music played during your live streams.
-Features
+## **PRSEK is a custom-built Twitch bot designed to seamlessly interface with the Songify Windows application, enabling real-time song requests and playback control directly from a Twitch chat. This bot enhances viewer engagement by allowing your audience to influence the music played during your live streams.**
+
+# **Features**
 Song Requests: Viewers can request songs using chat commands.
 
-Queue Management: Maintains a queue of requested songs and plays them in order.
+- Queue Management: Maintains a queue of requested songs and plays them in order.
 
-Moderation Tools: Streamers and moderators can blacklist songs, ban users, and manage the queue.
+- Moderation Tools: Streamers and moderators can blacklist songs, ban users, and manage the queue.
 
-Real-Time Feedback: Provides instant feedback in chat for song requests, skips, and playback status.
+- Real-Time Feedback: Provides instant feedback in chat for song requests, skips, and playback status.
 
-Customizable Commands: Configure command prefixes, cooldowns, and permissions.
+- Customizable Commands: Configure command prefixes, cooldowns, and permissions.
 
-Error Handling: Robust error handling and logging for troubleshooting.
+- Error Handling: Robust error handling and logging for troubleshooting.
 
-Installation
+# **Installation**
+
 Prerequisites
 
-Python 3.8 or higher
+- Python 3.8 or higher
 
-The Songify Windows application installed and running
+- The Songify Windows application installed and running
 
-Twitch Developer credentials (Client ID and Client Secret)
+- Twitch Developer credentials (Client ID and Client Secret)
 
-Steps
-Clone the Repository:
+# **Steps**
 
-git clone https://github.com/yourusername/SnipyL.git
-cd SnipyL
-Install Dependencies:
+**Clone the Repository:**
 
+```bash
+git clone https://github.com/yourusername/PRSEK.git
+cd PRSEK
+```
+
+**Install Dependencies:**
+
+```bash
 pip install -r requirements.txt
-Configure the Bot:
+```
+
+**Configure the Bot:**
 
 Rename config.example.json to config.json.
 
 Fill in the required fields:
 
+```json
 {
   "twitch_client_id": "YOUR_TWITCH_CLIENT_ID",
   "twitch_client_secret": "YOUR_TWITCH_CLIENT_SECRET",
@@ -46,9 +56,15 @@ Fill in the required fields:
   "max_queue_length": 10,
   "request_cooldown": 30
 }
-Run the Bot:
-python snipyl.py
-User Commands
+```
+
+# **Run the Bot:**
+
+```bash
+python prsek.py
+```
+# **User Commands**
+
 !queue or !q - View the current song queue.
 
 !currentsong or !nowplaying - Display the currently playing song.
@@ -59,7 +75,7 @@ User Commands
 
 !help - List available commands.
 
-#Streamer/Moderator Commands
+#**Streamer/Moderator Commands**
 
 !addsong <song_name> - Manually add a song to the queue.
 
@@ -73,25 +89,26 @@ User Commands
 
 !resume - Resume playback.
 
-!volume - Adjust the volume (if supported).
+!volume <level> - Adjust the volume (if supported).
 
 !blacklist <song_name> - Blacklist a song.
 
 !unblacklist <song_name> - Remove a song from the blacklist.
 
-!banuser - Ban a user from making requests.
+!banuser <username> - Ban a user from making requests.
 
-!unbanuser - Unban a user.
+!unbanuser <username> - Unban a user.
 
-!setcooldown - Set a cooldown for song requests.
+!setcooldown <seconds> - Set a cooldown for song requests.
 
-!setmaxqueue - Set the maximum queue length.
+!setmaxqueue <number> - Set the maximum queue length.
 
 !togglecommands - Enable or disable viewer commands.
 
 !reloadconfig - Reload the bot's configuration.
 
-Admin Commands
+# **Admin Commands**
+
 !restartbot - Restart the bot.
 
 !updatebot - Check for and apply updates.
@@ -100,45 +117,48 @@ Admin Commands
 
 !logs - View or export bot logs.
 
-Configuration
-(The bot's behavior can be customized via the config.json file.)
+# **Configuration**
+
+(The bot's behavior can be customized via the config.json file.) 
 
 Key settings include:
 
-Command Prefix: Change the prefix for commands (e.g., !, ?).
+- Command Prefix: Change the prefix for commands (e.g., !, ?).
 
-Rate Limits: Adjust rate limits for chat messages and API requests.
+- Rate Limits: Adjust rate limits for chat messages and API requests.
 
-Permissions: Set permissions for commands (viewer, mod, streamer-only).
+- Permissions: Set permissions for commands (viewer, mod, streamer-only).
 
-Logging: Enable or disable logging and specify log file locations.
+- Logging: Enable or disable logging and specify log file locations.
 
-Contributing
-We welcome contributions to SnipyL! If you'd like to contribute, please follow these steps:
+# **Contributing**
 
-Fork the repository.
+We welcome contributions to PRSEK! If you'd like to contribute, please follow these steps:
 
-Create a new branch for your feature or bugfix.
+- Fork the repository.
 
-Commit your changes and push to your fork.
+- Create a new branch for your feature or bugfix.
 
-Submit a pull request with a detailed description of your changes.
+- Commit your changes and push to your fork.
 
-Support
+- Submit a pull request with a detailed description of your changes.
+
+# **Support**
 If you encounter any issues or have questions, please:
 
 Open an issue on GitHub.
 
 Join our Discord server for community support.
 
-License
-SnipyL is licensed under the MIT License. See the LICENSE file for details.
+# License
+PRSEK is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
-TwitchIO - For the Twitch API interaction library.
+# Acknowledgements
 
-Songify - For the music playback application.
+- TwitchIO - For the Twitch API interaction library.
 
-You! - For using SnipyL and supporting the project!
+- Songify - For the music playback application.
 
-Happy Streaming! 🎶
+- You! - For using PRSEK and supporting the project!
+
+### Happy Streaming! 🎶
