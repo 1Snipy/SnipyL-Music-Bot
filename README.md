@@ -1,4 +1,4 @@
-## **PRSEK is a custom-built Twitch bot designed to seamlessly interface with the Songify Windows application, enabling real-time song requests and playback control directly from a Twitch chat. This bot enhances viewer engagement by allowing your audience to influence the music played during your live streams.**
+## **SnipyL is a custom-built Twitch bot designed to seamlessly interface with the Songify Windows application, enabling real-time song requests and playback control directly from a Twitch chat. This bot enhances viewer engagement by allowing your audience to influence the music played during your live streams.**
 
 # **Features**
 Song Requests: Viewers can request songs using chat commands.
@@ -28,8 +28,8 @@ Prerequisites
 **Clone the Repository:**
 
 ```bash
-git clone https://github.com/yourusername/PRSEK.git
-cd PRSEK
+git clone https://github.com/yourusername/SnipyL.git
+cd SnipyL
 ```
 
 **Install Dependencies:**
@@ -61,7 +61,7 @@ Fill in the required fields:
 # **Run the Bot:**
 
 ```bash
-python prsek.py
+python snipyl.py
 ```
 # **User Commands**
 
@@ -151,7 +151,7 @@ Open an issue on GitHub.
 Join our Discord server for community support.
 
 # License
-PRSEK is licensed under the MIT License. See the LICENSE file for details.
+SnipyL is licensed under the MIT License. See the LICENSE file for details.
 
 # Acknowledgements
 
@@ -159,6 +159,6 @@ PRSEK is licensed under the MIT License. See the LICENSE file for details.
 
 - Songify - For the music playback application.
 
-- You! - For using PRSEK and supporting the project!
+- You! - For using SnipyL and supporting the project!
 
 ### Happy Streaming! 🎶
