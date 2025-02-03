@@ -133,7 +133,7 @@ Key settings include:
 
 # **Contributing**
 
-We welcome contributions to PRSEK! If you'd like to contribute, please follow these steps:
+We welcome contributions to SnipyL! If you'd like to contribute, please follow these steps:
 
 - Fork the repository.
 
